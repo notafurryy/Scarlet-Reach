@@ -194,14 +194,14 @@
 
 /obj/item/clothing/mask/rogue/facemask/prisoner/dropped(mob/living/carbon/human/user)
 	. = ..()
-	REMOVE_TRAIT(user, TRAIT_PACIFISM, "cursedmask")
+	REMOVE_TRAIT(user, TRAIT_CURSE_RAVOX, "cursedmask")
 	REMOVE_TRAIT(user, TRAIT_SPELLCOCKBLOCK, "cursedmask")
 	if(QDELETED(src))
 		return
 	qdel(src)
 
 /obj/item/clothing/mask/rogue/facemask/prisoner/proc/timerup(mob/living/carbon/human/user)
-	REMOVE_TRAIT(user, TRAIT_PACIFISM, "cursedmask")
+	REMOVE_TRAIT(user, TRAIT_CURSE_RAVOX, "cursedmask")
 	REMOVE_TRAIT(user, TRAIT_SPELLCOCKBLOCK, "cursedmask")
 	visible_message(span_warning("The cursed mask opens with a click, falling off of [user]'s face and clambering apart on the ground, their penance complete."))
 	say("YOUR PENANCE IS COMPLETE.")
@@ -222,7 +222,7 @@
 	else if(slot == SLOT_WEAR_MASK)
 		active_item = TRUE
 		to_chat(user, span_warning("This accursed mask pacifies me!"))
-		ADD_TRAIT(user, TRAIT_PACIFISM, "cursedmask")
+		ADD_TRAIT(user, TRAIT_CURSE_RAVOX, "cursedmask")
 		ADD_TRAIT(user, TRAIT_SPELLCOCKBLOCK, "cursedmask")
 		if(HAS_TRAIT(user, TRAIT_RITUALIST))
 			user.apply_status_effect(/datum/status_effect/debuff/ritesexpended)
