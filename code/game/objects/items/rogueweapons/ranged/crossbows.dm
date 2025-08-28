@@ -193,8 +193,7 @@
 	chargingspeed = 20
 	damfactor = 0.6
 	accfactor = 1.3
-	reloadtime = 20
+	reloadtime = 30
 	hasloadedsprite = TRUE
-	movingreload = TRUE
 	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_HIP
 
