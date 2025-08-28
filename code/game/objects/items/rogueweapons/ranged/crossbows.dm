@@ -183,17 +183,3 @@
 	max_ammo = 1
 	start_empty = TRUE
 
-/obj/item/gun/ballistic/revolver/grenadelauncher/crossbow/slurbow
-	name = "slurbow"
-	desc = "A lighter weight crossbow with a distinct barrel shroud holding the bolt in place. Light enough to arm by hand. <br>They're popular among among highwaymen and the patrolling lamplighters of Otava."
-	icon = 'icons/roguetown/weapons/32.dmi'
-	icon_state = "slurbow0"
-	item_state = "slurbow"
-	possible_item_intents = list(/datum/intent/shoot/crossbow/slurbow, /datum/intent/arc/crossbow/slurbow, INTENT_GENERIC)
-	chargingspeed = 20
-	damfactor = 0.6
-	accfactor = 1.3
-	reloadtime = 30
-	hasloadedsprite = TRUE
-	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_HIP
-
