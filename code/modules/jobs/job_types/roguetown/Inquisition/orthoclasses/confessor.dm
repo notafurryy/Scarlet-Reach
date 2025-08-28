@@ -29,6 +29,7 @@
 	beltr = /obj/item/quiver/bolts
 	neck = /obj/item/clothing/neck/roguetown/gorget
 	backr = /obj/item/storage/backpack/rogue/satchel/otavan
+	backl = /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow
 	belt = /obj/item/storage/belt/rogue/leather/knifebelt/black/psydon
 	pants = /obj/item/clothing/under/roguetown/heavy_leather_pants/otavan
 	armor = /obj/item/clothing/suit/roguetown/armor/leather/heavy/coat/confessor
